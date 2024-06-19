@@ -12,7 +12,7 @@
       "ExtractFields": [
         "sharingCapability",
         "isMacSyncAppEnabled",
-        "isResharingByExternalUsersEnabled"
+        "isResharingByExternalUsersEnabled",
         "isUnmanagedSyncAppForTenantRestricted",
         "isSiteCreationEnabled",
         "deletedUserPersonalSiteRetentionPeriodInDays"
