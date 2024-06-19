@@ -10,43 +10,13 @@
         "asApp": "True"
       },
       "ExtractFields": [
-        "sharingCapability",
-        "isMacSyncAppEnabled",
-        "isResharingByExternalUsersEnabled",
-        "isUnmanagedSyncAppForTenantRestricted",
-        "isSiteCreationEnabled",
-        "deletedUserPersonalSiteRetentionPeriodInDays"
+        "sharingCapability"
       ],
       "StoreAs": "JSON",
       "FrontendFields": [
         {
           "name": "Sharing capability",
           "value": "SharepointSettings.sharingCapability",
-          "formatter": "string"
-        },
-        {
-          "name": "Mac Sync Enabled",
-          "value": "SharepointSettings.isMacSyncAppEnabled",
-          "formatter": "warnBool"
-        },
-        {
-          "name": "Resharing by external users",
-          "value": "isResharingByExternalUsersEnabled",
-          "formatter": "reverseBool"
-        },
-        {
-          "name": "Allow users to sync from unmanaged devices",
-          "value": "SharepointSettings.isUnmanagedSyncAppForTenantRestricted",
-          "formatter": "bool"
-        },
-        {
-          "name": "Site creation by standards users enabled",
-          "value": "SharepointSettings.isSiteCreationEnabled",
-          "formatter": "reverseBool"
-        },
-        {
-          "name": "Deleted user data rention(days)",
-          "value": "SharepointSettings.deletedUserPersonalSiteRetentionPeriodInDays",
           "formatter": "string"
         }
       ]
