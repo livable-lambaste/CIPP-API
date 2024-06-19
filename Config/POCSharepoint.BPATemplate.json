@@ -10,12 +10,7 @@
           "asApp": "True"
         },
           "ExtractFields": [
-          "sharingCapability",
-          "isMacSyncAppEnabled",
-          "isResharingByExternalUsersEnabled",
-          "isUnmanagedSyncAppForTenantRestricted",
-          "isSiteCreationEnabled",
-          "deletedUserPersonalSiteRetentionPeriodInDays"
+          "sharingCapability"
         ],
         "StoreAs": "JSON",
         "FrontendFields": [
