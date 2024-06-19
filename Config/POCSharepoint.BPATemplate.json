@@ -2,25 +2,29 @@
   "name": "Proof of concept cloned template",
   "style": "Table",
   "Fields": [
-    {
-      "parameters": {
-        "asApp": true
-      },
-      "URL": "https://graph.microsoft.com/beta/admin/sharepoint/settings",
-      "StoreAs": "JSON",
-      "API": "Graph",
-      "FrontendFields": [
         {
-          "formatter": "string",
-          "name": "Sharing capability",
-          "value": "SharepointSettings.sharingCapability"
+        "name": "SharepointSettings",
+        "API": "Graph",
+        "URL": "https://graph.microsoft.com/beta/admin/sharepoint/settings",
+        "Parameters": {
+          "asApp": "True"
+        },
+          "ExtractFields": [
+          "sharingCapability",
+          "isMacSyncAppEnabled",
+          "isResharingByExternalUsersEnabled",
+          "isUnmanagedSyncAppForTenantRestricted",
+          "isSiteCreationEnabled",
+          "deletedUserPersonalSiteRetentionPeriodInDays"
+        ],
+        "StoreAs": "JSON",
+        "FrontendFields": [
+            {
+            "name": "Sharing capability",
+            "value": "SharepointSettings.sharingCapability",
+            "formatter": "string"
+          }
+        ]
         }
-      ],
-      "name": "SharepointSettings",
-      "UseExistingInfo": false,
-      "ExtractFields": [
-        "sharingCapability"
-      ]
-    }
   ]
 }
